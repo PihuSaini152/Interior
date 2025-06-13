@@ -1,0 +1,150 @@
+/* Navbar Container */
+.navbar {
+  background-color:  rgb(1, 1, 45);
+  color: rgb(246, 229, 131);
+  padding: 10px 30px;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Flex container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+  width: 100px;
+}
+
+/* Desktop Navigation */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: rgb(246, 229, 131);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 0;
+}
+
+/* Hover underline from center */
+.nav-links li a::after,
+.mobile-menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(246, 229, 131);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-links li a:hover::after,
+.mobile-menu li a:hover::after {
+  width: 100%;
+}
+
+/* Search Icon */
+.search-icon {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Toggle Button */
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  color: rgb(246, 229, 131);
+  cursor: pointer;
+}
+
+/* Mobile Search */
+.mobile-search {
+  display: none;
+  flex: 1;
+  padding: 0 1rem;
+  max-width: 200px; /* ✅ Fixed width issue */
+}
+
+.mobile-search input {
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 60%;
+  height: 100vh;
+  background-color: rgb(6, 6, 79);
+  padding: 2rem 1.5rem;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu .close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(246, 229, 131);
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 3rem 0 0;
+}
+
+.mobile-menu li {
+  margin-bottom: 1.5rem;
+}
+
+.mobile-menu li a {
+  color: rgb(246, 229, 131);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 0;
+}
+
+/* Responsive View */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .mobile-search {
+    display: block;
+  }
+
+  .search-icon {
+    display: none;
+  }
+}
