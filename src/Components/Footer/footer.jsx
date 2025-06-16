@@ -2,7 +2,7 @@ import React from "react";
 import "./footer.css";
 import { FiInstagram, FiFacebook } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
-import logo from "/logo.jpg";
+// import logo from "/logo2.jpg";
 
 const Footer = () => {
   return (
@@ -10,7 +10,8 @@ const Footer = () => {
       <div className="footer-container">
         {/* Left: Logo + Description */}
         <div className="footer-left">
-          <img src={logo} alt="GRAND GALAXY GROUP" className="footer-logo" />
+         <img src="/footerimg/logo2.jpg" alt="GRAND GALAXY GROUP" className="footer-logo" />
+
           <h2>GRAND GALAXY GROUP</h2>
           <p>We design luxury spaces with elegance, innovation, and style. Let's turn your dream home into reality.</p>
           <div className="social-icons">
