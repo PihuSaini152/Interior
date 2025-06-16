@@ -1,6 +1,6 @@
 .footer {
-  background-color:  rgb(0, 0, 18);
-  color: rgb(246, 229, 131);
+  background-color:  rgb(0, 0, 16);
+  color: rgb(250, 233, 140);
   padding: 50px 30px 20px;
   font-family: "Segoe UI", sans-serif;
 }
@@ -41,7 +41,7 @@
 .social-icons a {
   margin-right: 15px;
   font-size: 22px;
-  color: rgb(246, 229, 131);
+  color: rgb(255, 243, 175);
   transition: transform 0.3s;
 }
 
@@ -53,7 +53,7 @@
 .footer-links h3 {
   margin-bottom: 10px;
   font-size: 20px;
-  border-bottom: 2px solid rgb(246, 229, 131);
+  border-bottom: 2px solid rgb(255, 243, 175);
   display: inline-block;
   padding-bottom: 4px;
 }
@@ -68,7 +68,7 @@
 }
 
 .footer-links a {
-  color: rgb(246, 229, 131);
+  color:  rgb(255, 243, 175);
   text-decoration: none;
   position: relative;
   transition: color 0.3s;
@@ -82,7 +82,7 @@
   transform: translateX(-50%);
   height: 2px;
   width: 0%;
-  background: rgb(246, 229, 131);
+  background:  rgb(255, 243, 175);
   transition: width 0.3s;
 }
 
