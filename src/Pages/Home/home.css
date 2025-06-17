@@ -17,7 +17,7 @@
 
 .hero-text {
   text-align: center;
-  color: #fff;
+   color: #c29f62;
   max-width: 800px;
   padding: 0 20px;
   animation: fadeUp 1.2s ease;
@@ -27,6 +27,7 @@
   font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
+
 }
 
 .hero-text p {
@@ -35,8 +36,9 @@
   line-height: 1.6;
 }
 
-.gold {
+.gold1 {
   color: #c29f62;
+  color: white;
   font-weight: 600;
 }
 

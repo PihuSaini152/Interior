@@ -115,3 +115,54 @@
     margin: 0 10px;
   }
 }
+
+.footer-center {
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.footer-center h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #dcbc83; /* Changed to theme gold */
+}
+
+.footer-center p {
+  font-size: 16px;
+  color: #f5d195; /* Also theme gold */
+  margin-bottom: 15px;
+}
+
+.placeholder-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 280px;
+  margin: 0 auto;
+  border: 1px solid #d4b47e;
+  border-radius: 6px;
+  padding: 6px 10px;
+  background: #fff;
+}
+
+.placeholder-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  color: #c29f62;
+  background: transparent;
+}
+
+.placeholder-box input::placeholder {
+  color: #c29f62;
+}
+
+.email-icon {
+  font-size: 18px;
+  color: #c29f62;
+  display: flex;
+  align-items: center;
+}

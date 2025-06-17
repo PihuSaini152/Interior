@@ -17,14 +17,15 @@ const HomeInterior = () => {
   const visibleSlides = 4;
 
   const prevSlide = () => {
-    setStartIndex((prev) => Math.max(prev - 1, 0));
-  };
+  setStartIndex((prev) => Math.max(prev - 1, 0));
+};
 
-  const nextSlide = () => {
-    setStartIndex((prev) =>
-      Math.min(prev + 1, slideImages.length - visibleSlides)
-    );
-  };
+const nextSlide = () => {
+  setStartIndex((prev) =>
+    prev + visibleSlides < slideImages.length ? prev + 1 : prev
+  );
+};
+
 
   const visibleImages = slideImages.slice(startIndex, startIndex + visibleSlides);
 
@@ -46,17 +47,19 @@ const HomeInterior = () => {
 {/* 
       Slider Section */}
       <div className="slider-section">
-        <h1 className="slider-heading">Explore Our Interiors</h1>
+        <h1 className="slider-heading">EXPLORE OUR INTERIORS</h1>
         <div className="slider-wrapper">
           <button className="slider-arrow" onClick={prevSlide}>&lt;</button>
           <div className="slider-container">
             {visibleImages.map((img, index) => (
-              <img
+             <div className="photo">
+               <img
                 key={index}
                 src={img}
                 alt={`Interior ${index + 1}`}
                 className="slider-image"
               />
+             </div>
             ))}
           </div>
           <button className="slider-arrow" onClick={nextSlide}>&gt;</button>

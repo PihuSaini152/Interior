@@ -2,8 +2,9 @@ import React from "react";
 import "./footer.css";
 import { FiInstagram, FiFacebook } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
-// import logo from "/logo2.jpg";
+import { FiMail } from "react-icons/fi";
 
+// import logo from "/logo2.jpg";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -20,6 +21,16 @@ const Footer = () => {
             <a href="#" aria-label="WhatsApp"><FaWhatsapp /></a>
           </div>
         </div>
+        <div className="footer-center">
+  <h3>Transform Your Space</h3>
+  <p>Looking to transform your space? Let’s create your dream interior together.</p>
+  <div className="placeholder-box">
+    <input type="text" placeholder="Enter your email or phone..." />
+    <span className="email-icon"><FiMail /></span>
+  </div>
+</div>
+
+
 
         {/* Right: Links */}
         <div className="footer-links">
