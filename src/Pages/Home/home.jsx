@@ -2,9 +2,12 @@ import React from "react";
 import "./home.css";
 import heroBg from "/homeimg/header.jpg"; 
 import  Home2 from "./home2.jsx"
+import ServicesPreview from "./servicesshort.jsx";
+import Home3 from "./home3.jsx"
 
 const Hero = () => {
   return (
+    <>
     <section className="full-hero" style={{ backgroundImage: `url(${heroBg})` }}>
       <div className="overlay">
         <div className="hero-text">
@@ -19,9 +22,13 @@ const Hero = () => {
         </div>
       </div>
     </section>
+    
+  <Home2/>
+  <ServicesPreview/>
+  <Home3/>
+
+</>
   
   );
 };
-  <Home2/>
-
 export default Hero;
