@@ -3,9 +3,9 @@ import './project.css';
 
 function Project() {
   const hader_pics = [
-    { id: 1, Image: '/project_img/IMG10.jpg', name: 'sourabh' },
-    { id: 2, Image: '/project_img/IMG14.jpg', name: 'gaurav' },
-    { id: 3, Image: '/project_img/IMG21.jpg', name: 'tunu' }
+    { id: 1, Image: '/project_img/IMG10.jpg', },
+    { id: 2, Image: '/project_img/IMG14.jpg', },
+    { id: 3, Image: '/project_img/IMG21.jpg', }
   ];
 
   const sliderRef = useRef(null);
