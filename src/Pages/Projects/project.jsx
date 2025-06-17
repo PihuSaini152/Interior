@@ -1,7 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './project.css';
+import Project_card from '../Projects/project_card.jsx';
 
 function Project() {
+  
   const hader_pics = [
     { id: 1, Image: '/project_img/IMG10.jpg', },
     { id: 2, Image: '/project_img/IMG14.jpg', },
@@ -26,17 +28,24 @@ function Project() {
   }, [counter]);
 
   return (
+    <>
     <div className="project_container">
       <div className="slider_main" ref={sliderRef}>
-      
+
         {hader_pics.map((slide) => (
           <div key={slide.id} className="slider">
             <img src={slide.Image} alt={slide.name} className="slider_pic" />
           </div>
         ))}
       </div>
+       
     </div>
+    <Project_card/>
+    </>
+    
   );
+ 
 }
+
 
 export default Project;
