@@ -73,8 +73,7 @@
 .slider-container {
   display: flex;
   gap: 1rem;
-  transform: translateX(0);
-  transition: transform 0.5s ease-in-out;
+  padding: 20px;
 }
 
 

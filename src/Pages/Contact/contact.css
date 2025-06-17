@@ -1,0 +1,139 @@
+.contact-wrapper {
+  background-color: #fffaf2;
+  padding: 4rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #b89e69;
+}
+.top-section {
+  display: flex;
+  justify-content: center; /* Center the whole section */
+  align-items: center;
+  gap: 40px; /* 👈 Reduce this from larger value (was probably 100px) */
+  flex-wrap: wrap;
+  padding: 50px 20px;
+}
+
+.left h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #b89e69;
+}
+
+.left .desc {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+.contact .text a {
+  color: #e4c590; /* Light gold like your theme */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact .text a:hover {
+  color: #fff3d0;
+  text-decoration: underline;
+}
+
+
+.contact-details p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  border-bottom: 1px solid #e0d6c3;
+  padding-bottom: 0.5rem;
+  color: #222;
+}
+
+.contact-details a {
+  color: #b89e69;
+  text-decoration: none;
+}
+
+.right .circle-img {
+  width: 320px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.circle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Bottom Cards */
+.bottom-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background: #f4eee4;
+  padding: 1.5rem;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+.card svg {
+  font-size: 1.5rem;
+  color: #b89e69;
+  margin-top: 0.3rem;
+}
+
+.card h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #b89e69;
+}
+
+.card p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bottom-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-details p {
+    text-align: left;
+  }
+}
+
+
+.contact-details a {
+  color: #b89e69;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
