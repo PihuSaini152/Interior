@@ -28,6 +28,7 @@ function Project() {
   return (
     <div className="project_container">
       <div className="slider_main" ref={sliderRef}>
+      
         {hader_pics.map((slide) => (
           <div key={slide.id} className="slider">
             <img src={slide.Image} alt={slide.name} className="slider_pic" />

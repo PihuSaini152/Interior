@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./nav.css";
 import { FiMenu, FiX, FiSearch } from "react-icons/fi";
-import logo from "/logo.jpg";
+// import logo from "/logo1.jpg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -16,7 +16,8 @@ const Navbar = () => {
         {/* Left: Logo */}
         <div className="logo">
           <Link to="/" onClick={closeMenu}>
-            <img src={logo} alt="Logo" />
+           <img src="/navimg/logo1.jpg" alt="Logo" />
+
           </Link>
         </div>
 

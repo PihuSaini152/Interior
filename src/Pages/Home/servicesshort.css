@@ -1,0 +1,87 @@
+.services-section {
+  padding: 80px 10%;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.6rem;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.gold {
+  color: #c29f62;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px 25px;
+  width: 300px;
+  transition: 0.4s ease;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #c29f62;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.explore-btn {
+  margin-top: 40px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  background-color: #c29f62;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #a78645;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: nowrap; /* 👈 changed from wrap to nowrap */
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    flex-wrap: wrap; /* 👈 for smaller screens, wrap allowed */
+  }
+}
+
+.service-card {
+  width: 300px; /* ✅ this width is good for 3 in a row */
+}
