@@ -5,6 +5,7 @@ import  Home2 from "./home2.jsx"
 import ServicesPreview from "./servicesshort.jsx";
 import Home3 from "./home3.jsx"
 import Home4 from "./home4.jsx";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,7 +20,9 @@ const Hero = () => {
             From concept to creation, we design <span className="gold">timeless</span> spaces with 
             <span className="gold"> elegance & soul</span>.
           </p>
-          <button>Explore Now</button>
+        <Link to="/Projects">
+         <button className="explore-btn">Explore Now</button>
+         </Link>
         </div>
       </div>
     </section>
