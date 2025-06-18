@@ -1,38 +1,48 @@
 .projectmain {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    padding: 40px 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px 0px;
 }
 
 .project_div {
-    width: 320px;
-    border-radius: 18px;
-     transition:  box-shadow 0.5s ease-in;
-   text-align: center;  
-   /* border: 1px solid; */
+  width: 320px;
+  height: 310px;
+  border-radius: 18px;
+  transition: box-shadow 0.5s ease-in;
+  text-align: center;
+  background-color: #fff; /* suggested: add background for better contrast */
+  cursor: pointer;        /* suggested: shows clickable feel */
 }
-.project_div:hover{
-    /* border-bottom: 1px solid ; */
-    box-shadow: 0px 10px 10px -10px ;
- /* transform: scale(1.05); */
+
+.project_div:hover {
+  border-bottom: 2px solid #444; /* darker line for hover effect */
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2); /* improved shadow */
 }
 
 .project_image {
-    width: 300px;
-    height: 250px;
-    border-radius: 18px 18px 0px 0px;
-    transition: transform 0.8s ease-in, box-shadow 0.5s ease-in;
+  width: 300px;
+  height: 250px;
+  border-radius: 18px 18px 0px 0px;
+  transition: transform 0.8s ease-in, box-shadow 0.5s ease-in;
+  object-fit: cover; /* ensures image never looks squashed */
 }
 
-/* ✅ Image dab jaye andar ki taraf (slightly scale down) */
+/* ✅ Image zoom hover effect */
 .project_image:hover {
-    transform: scale(1.05); /* <--- andar ki taraf */
-    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.2); /* andar ka shadow */
+  transform: scale(1.05);
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .project_image:active {
-    transform: scale(0.93);
+  transform: scale(0.93);
+}
+
+.project_haddin {
+  margin-top: 13px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
 }

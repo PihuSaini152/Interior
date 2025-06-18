@@ -1,27 +1,38 @@
-import React from 'react'
-import './project_card.css'
-function project_card() {
-    const project_cards = Array.from({ length: 30 }, (_, i) => ({
-  id: i + 1,
-  Image: `/project_img/IMG${i + 1}.jpg`,
-  name: `object_name_${i + 1}`
-}));
+import React from 'react';
+import './project_card.css';
+
+function Project_card() {
+  const names = [
+    'Modern Bedroom', 'Luxury Hall', 'Smart Kitchen', 'Cozy Living Room',
+    'Royal Bedroom', 'Classic Dining', 'Minimal Workspace', 'Wooden Finish',
+    'Artistic Wall', 'Urban Style', 'Vintage Touch', 'Elegant Design',
+    'Nature Theme', 'Compact Storage', 'LED Lighting', 'Wall Decor',
+    'Open Wardrobe', 'Loft Look', 'Green Vibes', 'Ceiling Design',
+    'TV Setup', 'Smart Study', 'Wall Panels', 'Bedside Setup',
+    'Curtain Match', 'Decor Ideas', 'Small Space', 'Marble Magic',
+    'Mirror Decor', 'Chic Interiors'
+  ];
+
+  const project_cards = Array.from({ length: 30 }, (_, i) => ({
+    id: i + 1,
+    Image: `/project_img/IMG${i + 1}.jpg`,
+    name: names[i] || `Project ${i + 1}`
+  }));
 
   return (
     <>
-    <div className="projectmain">
- {
-  project_cards.map((p_card)=>(
-    <div key={p_card.id} className="project_div">
-        <img src={p_card.Image} alt="" className='project_image' />
-        <h4>{p_card.name}</h4>
-    </div>
-  ))
- }
-    </div>
-     
+      <div className="projectmain">
+        {project_cards.map((p_card) => (
+          <div key={p_card.id} className="project_div">
+            <a href={p_card.Image} target="_blank" rel="noopener noreferrer">
+              <img src={p_card.Image} alt={p_card.name} className="project_image" />
+            </a>
+            <h4 className="project_haddin">{p_card.name}</h4>
+          </div>
+        ))}
+      </div>
     </>
-  )
+  );
 }
 
-export default project_card
+export default Project_card;
