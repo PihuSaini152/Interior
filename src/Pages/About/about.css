@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-us-page {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Banner Section */
+.about-banner {
+  background: url("/homeimg/home2.jpg") no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.banner-content {
+  text-align: center;
+  color: #fff;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.banner-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.banner-content p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+/* Section Styling */
+.about-section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease-out;
+}
+
+.about-section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-section h2 {
+  font-size: 34px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Team Section */
+.about-team {
+  background: #f5f5f5;
+  padding: 60px 20px;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease-out;
+}
+
+.about-team.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.about-team h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background: #fff;
+  padding: 20px;
+  max-width: 220px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h4 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #222;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
