@@ -1,0 +1,180 @@
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem 4rem;
+  background-image: url('/services/services.jpg');
+  background-size: cover;
+  background-position: center;
+  color:#b89e69;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  inset: 0;
+}
+
+.hero h1,
+.hero p,
+.hero-btn {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  background-color: #b89e69;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #a08652;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  color: #b89e69;
+  font-size: 2.3rem;
+  margin: 3rem 0 2rem;
+  font-weight: 600;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 👈 Exactly 3 cards per row */
+  gap: 3rem;
+  padding: 0 2rem 4rem;
+}
+
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-card .icon {
+  font-size: 2.5rem;
+  color: #b89e69;
+  margin-bottom: 1rem;
+}
+
+/* Work Process */
+.steps-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 2rem 4rem;
+}
+
+.step {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+}
+
+.step span {
+  background-color: #b89e69;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Why Choose Us */
+.why-choose {
+  background: #fdf7ed;
+  padding: 4rem 2rem;
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.check-icon {
+  color: #b89e69;
+  margin-right: 0.8rem;
+  font-size: 1.2rem;
+}
+
+/* CTA */
+.cta-section {
+  background-color: #b89e69;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 20px;
+  margin: 4rem 2rem;
+}
+
+.cta-btn {
+  background-color: white;
+  color: #b89e69;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: #f7e7cc;
+}
