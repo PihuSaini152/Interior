@@ -60,15 +60,16 @@
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 👈 Exactly 3 cards per row */
-  gap: 3rem;
-  padding: 0 2rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
+
 
 
 .service-card {
   background: white;
+  width: 280px;
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
