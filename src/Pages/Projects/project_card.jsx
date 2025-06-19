@@ -3,12 +3,12 @@ import './project_card.css';
 
 function Project_card() {
   const names = [
-    'Modern Bedroom', 'Luxury Hall', 'Smart Kitchen', 'Cozy Living Room',
-    'Royal Bedroom', 'Classic Dining', 'Minimal Workspace', 'Wooden Finish',
+    'Luxury Hall', 'Smart House Design ', 'Smart Kitchen','Modern Bedroom',
+    'Royal Bedroom', 'Classic Design', 'Minimal Workspace', 'Wooden Finish',
     'Artistic Wall', 'Urban Style', 'Vintage Touch', 'Elegant Design',
     'Nature Theme', 'Compact Storage', 'LED Lighting', 'Wall Decor',
-    'Open Wardrobe', 'Loft Look', 'Green Vibes', 'Ceiling Design',
-    'TV Setup', 'Smart Study', 'Wall Panels', 'Bedside Setup',
+    'Open Wardrobe', 'Loft Look', 'Green Vibes','TV Setup', 'Ceiling Design',
+     'Smart Study', 'Wall Panels', 'Bedside Setup',
     'Curtain Match', 'Decor Ideas', 'Small Space', 'Marble Magic',
     'Mirror Decor', 'Chic Interiors'
   ];
