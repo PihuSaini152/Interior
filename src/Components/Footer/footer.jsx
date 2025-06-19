@@ -16,9 +16,9 @@ const Footer = () => {
           <h2>GRAND GALAXY GROUP</h2>
           <p>We design luxury spaces with elegance, innovation, and style. Let's turn your dream home into reality.</p>
           <div className="social-icons">
-            <a href="https://instagram.com/maheshsainik94" aria-label="Instagram"><FiInstagram /></a>
+            <a href="https://instagram.com/GRAND_GALAXY_GROUP" aria-label="Instagram"><FiInstagram /></a>
             <a href="#" aria-label="Facebook"><FiFacebook /></a>
-            <a href="https://wa.me/917205853096" aria-label="WhatsApp"><FaWhatsapp /></a>
+            <a href="https://wa.me/7208530960" aria-label="WhatsApp"><FaWhatsapp /></a>
           </div>
         </div>
         <div className="footer-center">
