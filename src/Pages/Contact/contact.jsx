@@ -15,10 +15,10 @@ const Contact = () => {
           </p>
 
           <div className="contact-details">
-            <p><strong>Phone:</strong> <a href="https://wa.me/917205853096">+91 7205853096</a></p>
+            <p><strong>Phone:</strong> <a href="https://wa.me/7208530960">+91 7208530960</a></p>
             <p><strong>Location:</strong> Samruddhi CHS, Worli, Mumbai - 400018</p>
             <p><strong>Mail:</strong> <a href="mailto:grandgalaxygroup@gmail.com">grandgalaxygroup@gmail.com</a></p>
-            <p><strong>Instagram:</strong> <a href="https://instagram.com/maheshsainik94">@maheshsainik94</a></p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/GRAND_GALAXY_GROUP">@GRAND_GALAXY_GROUP</a></p>
           </div>
         </div>
 
